@@ -1,0 +1,9 @@
+//The Redux store holds the application's entire state tree. You create it by passing your root reducer to createStore (or configureStore with Redux Toolkit).
+
+// store/index.js
+import { createStore } from 'redux'; // Or configureStore from @reduxjs/toolkit
+import counterReducer from '../reducers';
+
+const store = createStore(counterReducer); // Or configureStore({ reducer: counterReducer });
+
+export default store;
