@@ -1,0 +1,16 @@
+//Dispatching Actions and Subscribing to State Changes:
+//To change the state, you dispatch an action to the store. You can also subscribe to the store to be notified whenever the state changes
+
+// index.js (or your main application file)
+import store from './store';
+import { increment, decrement } from './actions';
+
+// Subscribe to state changes
+store.subscribe(() => {
+  console.log('Current state:', store.getState());
+});
+
+// Dispatch actions
+store.dispatch(increment()); // count becomes 1
+store.dispatch(increment()); // count becomes 2
+store.dispatch(decrement()); // count becomes 1
