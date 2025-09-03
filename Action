@@ -1,0 +1,10 @@
+//Actions are plain JavaScript objects that describe what happened. They must have a type property and can optionally carry a payload with data.
+
+// actions/index.js
+export const increment = () => ({
+  type: 'INCREMENT'
+});
+
+export const decrement = () => ({
+  type: 'DECREMENT'
+});
