@@ -6,7 +6,7 @@ import store from './store';
 import { increment, decrement } from './actions';
 
 // Subscribe to state changes
-store.subscribe(() => {
+store.subscribe(() => { 
   console.log('Current state:', store.getState());
 });
 
